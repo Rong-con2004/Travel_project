@@ -29,12 +29,12 @@ html {
 .container-header {
   display: flex;
   justify-content: space-between;
-  padding: 0px 34px;
+  padding: 4px 34px;
   align-items: center;
   text-align: center;
 }
 .logo-header {
-  margin-top: 4px;
+  /* margin-top: 4px; */
 }
 .lota-logo img {
   width: 34px;
@@ -67,7 +67,7 @@ html {
   width: 100vw;
 }
 .nav-item-container {
-  width: 100%;
+  width: 72%;
   height: 80px;
   margin: auto auto;
   padding-top: 20px;
