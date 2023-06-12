@@ -221,8 +221,8 @@ html {
 
 /* Footer */
 .footer {
-  color: #dbd5d5;
-  background-color: #282a3a;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(54, 54, 54, 0.9);
   margin-top: 20px;
 }
 .footer > p {
@@ -236,10 +236,10 @@ html {
 }
 .footer-member a {
   text-decoration: none;
-  color: #dbd5d5;
+  color: rgba(255, 255, 255, 1);
 }
 .footer-member a:hover {
-  color: #fff;
+  color: #dbd5d5;
 }
 .footer-school {
   padding: 20px 0;
@@ -247,10 +247,10 @@ html {
 }
 .footer-school a {
   text-decoration: none;
-  color: #dbd5d5;
+  color: rgba(255, 255, 255, 1);
 }
 .footer-school a:hover {
-  color: #fff;
+  color: #dbd5d5;
 }
 /* modal log-in */
 .modal {

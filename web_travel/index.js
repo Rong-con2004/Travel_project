@@ -16,7 +16,6 @@ btn.addEventListener("click", showLogIn);
 btnUser.addEventListener("click", showLogIn);
 modalClose.addEventListener("click", hideLogIn);
 modal.addEventListener("click", hideLogIn);
-
 modalContainer.addEventListener("click", function (event) {
   event.stopPropagation();
 });
@@ -42,7 +41,6 @@ function hideSignUp() {
 
 modalCloseSignUp.addEventListener("click", hideSignUp);
 modalSignUp.addEventListener("click", hideSignUp);
-
 modalContainerSignUp.addEventListener("click", function (event) {
   event.stopPropagation();
 });
@@ -53,11 +51,13 @@ document
     modal.classList.remove("open");
     modalSignUp.classList.add("open");
   });
-
+document.getElementById("btn-sign-up").addEventListener("click", function () {
+  modalSignUp.classList.remove("open");
+  modal.classList.add("open");
+});
 // slideshow
 var myIndex = 0;
 carousel();
-
 function carousel() {
   var i;
   var x = document.getElementsByClassName("slide-images");
