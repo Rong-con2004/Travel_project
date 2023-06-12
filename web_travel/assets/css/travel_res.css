@@ -1,0 +1,157 @@
+@media screen and (max-width : 767px) {
+    .content {
+        padding-top: 80px;
+    }
+    .content-menu {
+        /* display: none; */
+    }
+
+    .header {
+    }
+
+    .header__middle i {
+        display: block;
+        margin-top: 18px;
+    }
+
+    .header__middle input {
+        display: none;
+        padding-left: 25px;
+        position: absolute;
+        background-color: #282A3A;
+        color: #dfd9d9;
+        width: 100%;
+        left: 0;
+        top: 62px;
+        margin: 0;
+        border: none;
+        border-radius: 0;
+    }
+
+    .header__middle input::placeholder {
+        color: #dfd9d9;
+    }
+
+    .header__middle input:focus {
+        outline: none;
+    }
+
+    .header__middle a {
+        text-decoration: none;
+    }
+
+    .header__left ul li {
+        display: none;
+    }
+
+    .header__left ul, .header__right ul {
+        padding-left: 0;
+    }
+
+    .header__right ul a {
+        margin-left: 30px;
+    }
+
+    .header__right i {
+        margin-top: 2px;
+    }
+
+    .header__left ul li:first-child {
+        display: block;
+        margin-bottom: 7px;
+    }
+
+    .header__noti {
+    }
+
+    .header__notify {
+        right: -170px;
+        width: 300px;
+    }
+
+    .header__notify::before {
+        right: 50%;
+    }
+
+    .content-menu {
+        width: 37.5px;
+        overflow: hidden;
+    }
+
+    .content-menu div {
+        margin-left: 0;
+    } 
+
+    .content-down:hover {
+        color: #D21312;
+    }
+
+    .content-menu p, .content-info p {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    .dropdown-content {
+        float: left;
+        right: 0;
+    }
+
+    .menu-dropdown {
+        display: none;
+    }
+
+    #content-down {
+        display: inline;
+    } 
+
+    .content-card-info p {
+        font-size: 0.8rem;
+    }
+
+    .footer-member {
+
+    }
+
+    .modal-right-describe {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .header {
+        padding: 0;
+    }
+
+    .header__left ul {
+        /* padding-left: 0; */
+    }
+
+    .header__left li:last-child {
+        margin-right: 10px;
+    }
+
+    .header__left a {
+        margin-right: 10px;
+    }
+
+    .header__middle {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .header__right ul {
+        padding-left: 0;
+    }
+
+    .header__right ul li:last-child {
+        margin-right: 20px;
+    }
+
+    .header__right a {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+}
