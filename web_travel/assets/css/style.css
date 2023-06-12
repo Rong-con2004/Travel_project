@@ -68,18 +68,20 @@ html {
 }
 .nav-item-container {
   width: 72%;
-  height: 80px;
+  height: 72px;
   margin: auto auto;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 .item-list {
   width: 33.33333%;
   float: left;
   text-align: center;
 }
-
+.item-list:hover a {
+  color: #555555;
+}
 .img-item {
-  padding-bottom: 8px;
+  padding-bottom: 6px;
 }
 .body-item a {
   font-size: 16px;
@@ -92,7 +94,7 @@ html {
 }
 .slide-images {
   width: 100%;
-  height: calc(100vh - 122px);
+  height: calc(100vh - 114px);
   display: none;
 }
 /* fullpage - wrapped */
