@@ -1,5 +1,5 @@
 // log-in
-const btn = document.querySelector(".js-log-in");
+
 const btnUser = document.querySelector(".js-log-in-img");
 const modal = document.querySelector(".js-modal");
 const modalContainer = document.querySelector(".js-modal-container");
@@ -12,7 +12,6 @@ function hideLogIn() {
   modal.classList.remove("open");
 }
 
-btn.addEventListener("click", showLogIn);
 btnUser.addEventListener("click", showLogIn);
 modalClose.addEventListener("click", hideLogIn);
 modal.addEventListener("click", hideLogIn);
