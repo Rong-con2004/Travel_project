@@ -16,20 +16,21 @@ html {
 /* ---------------- */
 /* header */
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
-  /* background-color: rgba(99, 184, 255, 0.7); */
+  background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
 }
 .container-header div a {
   color: rgba(255, 255, 255, 1);
+  font-weight: 500;
 }
 .container-header {
   display: flex;
   justify-content: space-between;
-  padding: 10px 10%;
+  padding: 20px 10%;
   align-items: center;
   text-align: center;
 }

@@ -1,5 +1,4 @@
 // log-in
-
 const btnUser = document.querySelector(".js-log-in-img");
 const modal = document.querySelector(".js-modal");
 const modalContainer = document.querySelector(".js-modal-container");
