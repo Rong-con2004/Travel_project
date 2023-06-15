@@ -15,7 +15,7 @@ html {
   align-items: center;
   justify-content: center;
 }
-/* form login */
+/* form */
 .modal {
   display: flex;
   align-items: center;
@@ -44,14 +44,14 @@ html {
 }
 .modal-heading h1 {
   width: 80%;
-  font-size: 30px;
+  font-size: 26px;
   margin: 10px auto;
 }
 /* body form */
 .body-access-modal {
   padding: 16px 48px;
 }
-/* login */
+/* signup */
 .modal-label-access {
   display: block;
   font-size: 16px;
@@ -59,7 +59,7 @@ html {
   line-height: 1.6;
   cursor: pointer;
 }
-.modal-input-login {
+.modal-input-signup {
   font-size: 16px;
   border: 1px solid #ddd;
   width: 100%;
@@ -68,22 +68,10 @@ html {
   padding: 8px 16px;
   margin-bottom: 6px;
 }
-.modal-input-login:hover {
+.modal-input-signup:hover {
   border: 1px solid #bbb;
 }
-.body-access-modal a {
-  display: block;
-  font-size: 14px;
-  line-height: 1.6;
-  text-decoration: none;
-  color: #000;
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
-.body-access-modal a:hover {
-  text-decoration: underline;
-}
-.Log-in {
+.Sign-Up {
   font-size: 16px;
   width: 100%;
   background-color: #3f59b6;
@@ -92,23 +80,21 @@ html {
   min-height: 40px;
   border-radius: 25px;
   padding: 8px 16px;
+  margin-top: 10px;
   margin-bottom: 15px;
   font-weight: 600;
   line-height: 1.6;
 }
-.Log-in:hover {
+.Sign-Up:hover {
   cursor: pointer;
   background-color: #1a77f2;
-}
-.continue-btn {
-  margin-top: 10px;
 }
 .body-access-modal h4 {
   text-align: center;
   margin-bottom: 15px;
   line-height: 1.6;
 }
-.another-login {
+.another-signup {
   font-size: 16px;
   width: 100%;
   background-color: #fff;
@@ -116,11 +102,10 @@ html {
   border: 1px solid #ccc;
   min-height: 40px;
   padding: 8px 16px;
-  margin-bottom: 15px;
   line-height: 1.6;
   border-radius: 25px;
 }
-.another-login:hover {
+.another-signup:hover {
   cursor: pointer;
   border: 1px solid rgba(178, 223, 238, 0.8);
   background-color: rgba(191, 239, 255, 0.1);
@@ -136,19 +121,16 @@ html {
   text-align: center;
   line-height: 1.6;
 }
-.invitation-sign-up,
 .invitation-log-in {
   border: none;
   background-color: #fff;
   line-height: 1.6;
   font-weight: 600;
 }
-.invitation-sign-up span {
+.invitation-log-in a {
   font-size: 16px;
-}
-.invitation-sign-up span:hover {
-  cursor: pointer;
-  text-decoration: underline;
+  text-decoration: none;
+  color: #000;
 }
 .invitation-log-in:hover {
   cursor: pointer;
