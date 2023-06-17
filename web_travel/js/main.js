@@ -64,3 +64,20 @@ function carousel() {
   x[myIndex - 1].style.display = "block";
   setTimeout(carousel, 5000);
 }
+
+// slick slider
+$(document).ready(function () {
+  $(".list-fd").slick({
+    infinite: true,
+    slidesToShow: 3,
+    dots: false,
+    autoplay: false,
+    cssEase: "linear",
+    swipeToSlide: true,
+    arrows: true,
+    prevArrow:
+      "<button type='button' class='slick-prev pull-left'><i class='fa-light fa-chevron-left'></i></button>",
+    nextArrow:
+      "<button type='button' class='slick-next pull-right'><i class='fa-light fa-chevron-right'></i></button>",
+  });
+});

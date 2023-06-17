@@ -6,15 +6,34 @@
 html {
   font-family: "Inter", sans-serif;
 }
-
-/* ---------------- */
-/* Common */
-.cancel-text-deco {
-  text-decoration: none;
+html::-webkit-scrollbar {
+  width: 6px;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #5d85d4;
+  border-radius: 36px;
+}
+html::-webkit-scrollbar-track {
+  background-color: #e1eaf8;
 }
 
 /* ---------------- */
+/* Common */
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* ---------------- */
+
 /* header */
+
 .header {
   position: absolute;
   top: 0;
@@ -23,29 +42,35 @@ html {
   background-color: rgba(0, 0, 0, 0.1);
   width: 100%;
 }
+
 .container-header {
   display: flex;
   justify-content: space-between;
-  padding: 20px 10%;
+  padding: 10px 10%;
   align-items: center;
   text-align: center;
 }
+
 /* Lota-logo */
+
 .lota-logo img {
   width: 40px;
   border-radius: 999px;
 }
+
 /* ul-li list */
+
 .menu-header {
   display: flex;
   justify-content: center;
   align-items: center;
-  list-style: none;
   gap: 15px;
 }
+
 .menu-item {
   margin: 0 35px;
 }
+
 .menu-link {
   position: relative;
   display: inline-block;
@@ -56,6 +81,7 @@ html {
   padding: 0 5px;
   transition: all 0.2s linear;
 }
+
 .menu-link:after {
   content: "";
   position: absolute;
@@ -66,16 +92,21 @@ html {
   bottom: -8px;
   transition: 0.3s;
 }
+
 .menu-link:hover:after {
   width: 100%;
 }
+
 /* btn-user */
+
 .btn-user {
   cursor: pointer;
 }
+
 .btn-user > i {
   position: relative;
 }
+
 .btn-user .subnav-user {
   position: absolute;
   top: 80%;
@@ -89,13 +120,14 @@ html {
   gap: 15px;
   background: linear-gradient(45deg, #5d85d4, #3f59b6);
   box-shadow: 0 10px 20px #00000033;
-  list-style: none;
   width: 240px;
   display: none;
 }
+
 .subnav-user.open {
   display: block;
 }
+
 .subnav-user a {
   display: inline-block;
   width: 100%;
@@ -105,23 +137,29 @@ html {
   font-size: 18px;
   cursor: pointer;
 }
+
 .subnav-user a:hover {
   background-color: #7ca4de;
   transition: all 0.25s linear;
 }
+
 /* slideshow */
+
 .slideshow {
   position: relative;
   height: 100vh;
   width: 100%;
 }
+
 .slide-images {
   height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
   background-size: 100%;
 }
+
 /* gotopbtn */
+
 .gotopbtn {
   position: fixed;
   width: 50px;
@@ -144,7 +182,10 @@ html {
 }
 
 /* box- destination */
-.box-destination {
+
+.box-destination,
+.box-fd {
+  position: relative;
   width: 100%;
   display: flex;
   align-items: center;
@@ -152,6 +193,7 @@ html {
   padding: 80px 0;
   background-color: #eaf1f7;
 }
+
 .wrap-destination {
   display: flex;
   align-items: center;
@@ -159,7 +201,9 @@ html {
   flex-direction: column;
   width: 85%;
 }
-.title-destination {
+
+.title-destination,
+.title-fd {
   width: 100%;
   display: flex;
   align-items: center;
@@ -168,14 +212,17 @@ html {
   gap: 15px;
   margin-bottom: 40px;
 }
-.title-destination h3 {
-  font-size: 65px;
+
+.title-destination h3,
+.title-fd h3 {
   font-family: "Dancing Script";
+  font-size: 65px;
   line-height: 65px;
   font-weight: 600;
   color: #231d0d;
   text-align: center;
 }
+
 .wrap-destination .content-destination {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
@@ -183,10 +230,7 @@ html {
   gap: 15px;
   width: 100%;
 }
-.content-destination .post-destination:nth-child(1) {
-  grid-column: span 2;
-  grid-row: span 2;
-}
+
 .content-destination .post-destination {
   position: relative;
   display: flex;
@@ -197,6 +241,12 @@ html {
   border-radius: 12px;
   box-shadow: 10px 20px 20px #00000020;
 }
+
+.content-destination .post-destination:nth-child(1) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
 .post-destination .filter-bg {
   position: absolute;
   z-index: 1;
@@ -204,17 +254,20 @@ html {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.25);
 }
+
 .post-destination .post-img {
   width: 100%;
   height: 100%;
   display: inline-block;
   overflow: hidden;
 }
+
 .post-destination .post-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .post-destination .post-info {
   position: absolute;
   z-index: 2;
@@ -227,6 +280,7 @@ html {
   flex-direction: column;
   overflow: hidden;
 }
+
 .post-destination .post-info .title-info {
   display: flex;
   align-items: flex-start;
@@ -235,6 +289,7 @@ html {
   width: 100%;
   padding: 20px;
 }
+
 .post-info .title-info a {
   font-family: "Nunito";
   font-size: 20px;
@@ -246,8 +301,109 @@ html {
   text-shadow: 0 0 10px #000000;
   text-decoration: none;
 }
+
 .post-info .title-info span {
   color: #fafafa;
   text-shadow: 0 0 10px #000000;
   font-size: 16px;
+}
+
+/* box-fd */
+
+.box-fd .wrap-fd {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 85%;
+}
+
+.list-fd {
+  position: relative;
+  width: 100%;
+  padding: 30px 0 50px;
+  cursor: grab;
+}
+
+.wrap-fd .list-fd:active {
+  cursor: grabbing;
+}
+
+.list-fd .post-fd {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 10px 10px #00000020;
+  transition: all 0.25s linear;
+}
+
+.list-fd .post-fd:hover {
+  transform: translateY(-30px);
+  box-shadow: 0px 10px 10px #00000066;
+  transition: all 0.3s linear;
+}
+
+.post-fd .img-post-fd {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.post-fd .img-post-fd img {
+  transition: all 0.25s linear;
+  border-radius: 12px;
+}
+
+.post-fd:hover .img-post-fd img {
+  transform: scale(1.05);
+  transition: all 0.25s linear;
+}
+
+/* slick-slide */
+
+.slick-slide {
+  margin: 0 30px;
+}
+
+.slick-arrow {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.slick-arrow i {
+  color: #4366c5;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.slick-prev {
+  left: -15px;
+}
+
+.slick-next {
+  right: -15px;
+}
+
+.slick-prev:active,
+.slick-next:active {
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
 }

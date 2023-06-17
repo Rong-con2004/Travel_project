@@ -10,6 +10,11 @@
       href="/web_travel/assets/Logo/favicon.png"
       type="image/x-icon"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <link rel="stylesheet" href="/web_travel/css/main.css" />
     <link
       rel="stylesheet"
@@ -38,7 +43,7 @@
           <div class="container-header">
             <!-- LOTA - logo -->
             <div class="logo-header">
-              <a href="#" class="lota-logo cancel-text-deco">
+              <a href="#" class="lota-logo">
                 <img src="/web_travel/assets/Logo/logo.png" />
               </a>
             </div>
@@ -46,16 +51,16 @@
             <!-- ul-li list -->
             <ul class="menu-header">
               <li class="menu-item">
-                <a href="#" class="menu-link cancel-text-deco">Trang chủ</a>
+                <a href="#" class="menu-link">Trang chủ</a>
               </li>
               <li class="menu-item">
-                <a href="#" class="menu-link cancel-text-deco">Giới thiệu</a>
+                <a href="#" class="menu-link">Giới thiệu</a>
               </li>
               <li class="menu-item">
-                <a href="#" class="menu-link cancel-text-deco">Liên hệ</a>
+                <a href="#" class="menu-link">Liên hệ</a>
               </li>
               <li class="menu-item">
-                <a href="#" class="menu-link cancel-text-deco">Hình ảnh</a>
+                <a href="#" class="menu-link">Hình ảnh</a>
               </li>
             </ul>
 
@@ -67,23 +72,19 @@
               ></i>
               <ul class="subnav-user js-subnav-user">
                 <li>
-                  <a href="" class="cancel-text-deco">Thông tin cá nhân</a>
+                  <a href="" class="">Thông tin cá nhân</a>
                 </li>
                 <li>
-                  <a
-                    href="/web_travel/html/loginForm.html"
-                    class="cancel-text-deco js-btn-login"
+                  <a href="/web_travel/html/loginForm.html" class="js-btn-login"
                     >Đăng nhập</a
                   >
                 </li>
                 <li>
-                  <a
-                    href="/web_travel/html/signupForm.html"
-                    class="cancel-text-deco"
+                  <a href="/web_travel/html/signupForm.html" class=""
                     >Đăng ký</a
                   >
                 </li>
-                <li><a href="" class="cancel-text-deco">Đăng xuất</a></li>
+                <li><a href="" class="">Đăng xuất</a></li>
               </ul>
             </div>
           </div>
@@ -105,13 +106,14 @@
           ></div>
         </div>
       </div>
+
       <!-- go to top button -->
       <a href="javascript:;" onclick="goToTop()" id="gotopbtn" class="gotopbtn"
         ><i class="fa-regular fa-chevron-up fa-lg"></i
       ></a>
 
       <!-- destinations start -->
-      <div class="box-destination">
+      <section class="box-destination">
         <div class="wrap-destination">
           <div class="title-destination">
             <h3>Địa điểm phổ biến</h3>
@@ -241,8 +243,60 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <!-- food-drink start -->
+      <section class="box-fd">
+        <div class="wrap-fd">
+          <div class="title-fd">
+            <h3>Ẩm thực Việt</h3>
+          </div>
+
+          <div class="list-fd">
+            <div class="post-fd">
+              <div class="img-post-fd">
+                <img src="/web_travel/assets/pic/food1.jpg" alt="" />
+              </div>
+            </div>
+            <div class="post-fd">
+              <div class="img-post-fd">
+                <img src="/web_travel/assets/pic/food2.jpg" alt="" />
+              </div>
+            </div>
+            <div class="post-fd">
+              <div class="img-post-fd">
+                <img src="/web_travel/assets/pic/food3.jpg" alt="" />
+              </div>
+            </div>
+            <div class="post-fd">
+              <div class="img-post-fd">
+                <img src="/web_travel/assets/pic/food4.jpg" alt="" />
+              </div>
+            </div>
+            <div class="post-fd">
+              <div class="img-post-fd">
+                <img src="/web_travel/assets/pic/drink1.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
     </div>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
 
     <script src="/web_travel/js/main.js"></script>
   </body>
