@@ -40,15 +40,6 @@ window.onscroll = function () {
     gotopbtn.style.display = "none";
   }
 };
-function goToTop() {
-  var timer = setInterval(function () {
-    document.documentElement.scrollTop -= 40;
-
-    if (document.documentElement.scrollTop <= 0) {
-      clearInterval(timer);
-    }
-  }, 5);
-}
 
 // slideshow
 var myIndex = 0;
