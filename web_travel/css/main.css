@@ -176,7 +176,7 @@ img {
   font-size: 14px;
   line-height: 50px;
   color: #fff;
-  background-color: #4366c5;
+  background-color: #5d85d4;
   border-radius: 50%;
   box-shadow: 0 5px 20px #33333333;
   cursor: pointer;
@@ -402,8 +402,75 @@ img {
 .slick-prev:active,
 .slick-next:active {
   transform: scale(0.9);
-  -webkit-transform: scale(0.9);
-  -moz-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  -o-transform: scale(0.9);
+}
+
+/* footer */
+
+.footer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0 40px;
+  background-color: #4366c5;
+}
+
+.wrap-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+}
+
+.wrap-footer > p {
+  width: 100%;
+  font-size: 35px;
+  color: #fff;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.footer-member-list {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  gap: 50px;
+  padding: 40px 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer-member {
+  display: block;
+  color: #fff;
+}
+
+.footer-member a {
+  color: #fff;
+}
+
+.footer-member a:hover {
+  color: #dbd5d5;
+}
+
+.footer-school {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.footer-school p {
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.footer-school a {
+  color: #fff;
+}
+
+.footer-school a:hover {
+  color: #dbd5d5;
 }
