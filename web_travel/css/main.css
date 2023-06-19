@@ -39,7 +39,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 10;
   background-color: rgba(0, 0, 0, 0.1);
   width: 100%;
 }
@@ -469,6 +469,7 @@ img {
 
 .footer-school a {
   color: #fff;
+  font-size: 16px;
 }
 
 .footer-school a:hover {
