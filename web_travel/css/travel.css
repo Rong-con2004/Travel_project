@@ -16,7 +16,7 @@ html {
   display: flex;
   padding: 0 5%;
   position: fixed;
-  background-color: #4366c5 !important;
+  background: linear-gradient(45deg, #4366c5, #5d85d4);
   z-index: 2;
   right: 0;
   left: 0;
