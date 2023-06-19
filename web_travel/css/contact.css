@@ -143,6 +143,7 @@ li {
 
 .contact {
   padding-top: 120px;
+  background-color: #f0f2f5;
 }
 
 .contact__title {
@@ -228,7 +229,8 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px 0;
+  padding: 20px 0;
+  background-color: #f0f2f5;
 }
 
 .form-contact {
