@@ -157,6 +157,8 @@ img {
   width: 100%;
   background-repeat: no-repeat;
   background-size: 100%;
+  transition: ease-in;
+  transform: translateX(-100%);
 }
 
 /* gotopbtn */

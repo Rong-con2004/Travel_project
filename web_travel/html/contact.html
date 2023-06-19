@@ -1,170 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lota</title>
-    <link rel="icon" href="/web_travel/assets/Logo/favicon.png" type="image/x-icon"/>
-    <link rel="stylesheet" href="/web_travel/css/travel.css">
-    <link rel="stylesheet" href="/web_travel/css/main.css">
-    <link rel="stylesheet" href="/web_travel/css/travel_res.css">
-    <link rel="stylesheet" href="/web_travel/css/contact.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
-    <div class="header">
-        <div class="header__left">
-          <ul>
-            <li>
-              <a href=""
-                ><img src="/web_travel/assets/pic/travel/logo.png" alt=""
-              /></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liên hệ - Lota</title>
+    <link
+      rel="icon"
+      href="/web_travel/assets/Logo/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/web_travel/css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <!-- header -->
+      <div class="header">
+        <div class="container-header">
+          <!-- LOTA - logo -->
+          <div class="logo-header">
+            <a href="#" class="lota-logo">
+              <img src="/web_travel/assets/Logo/logo.png" />
+            </a>
+          </div>
+
+          <!-- ul-li list -->
+          <ul class="menu-header">
+            <li class="menu-item">
+              <a href="/web_travel/html/main.html" class="menu-link"
+                >Trang chủ</a
+              >
             </li>
-            <li>
-              <a href=""><i class="fa-solid fa-house"></i></a>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Giới thiệu</a>
             </li>
-            <li>
-              <a href=""><i class="fa-regular fa-square-plus"></i></a>
+            <li class="menu-item">
+              <a href="./contact.html" class="menu-link">Liên hệ</a>
             </li>
-          </ul>
-        </div>
-        <div class="header__middle">
-          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-          <input type="text" placeholder="Tìm kiếm" />
-        </div>
-        <div class="header__right">
-          <ul>
-            <li class="header__noti">
-              <a href=""><i class="fa-regular fa-bell"></i></a>
-              <div class="header__notify">
-                <header class="header__notify-header">
-                  <h3>Thông báo mới nhận</h3>
-                </header>
-                <ul class="header__notify-list" style="margin-top: 0">
-                  <li class="header__notify-item header__notify-item-viewed">
-                    <a href="" class="header__notify-link">
-                      <img
-                        src="/web_travel/assets/pic/travel/DanangSouvenirs.jpg"
-                        alt=""
-                        class="header__notify-img"
-                      />
-                      <div class="header__notify-info">
-                        <span class="header__notify-name"
-                          >Bạn đã lưu một địa điểm</span
-                        >
-                        <span class="header__notify-time">10 phút trước</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="header__notify-item header__notify-item-viewed">
-                    <a href="" class="header__notify-link">
-                      <img
-                        src="/web_travel/assets/pic/travel/DanangSouvenirs.jpg"
-                        alt=""
-                        class="header__notify-img"
-                      />
-                      <div class="header__notify-info">
-                        <span class="header__notify-name"
-                          >Bạn đã lưu một địa điểm</span
-                        >
-                        <span class="header__notify-time">10 phút trước</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="header__notify-item">
-                    <a href="" class="header__notify-link">
-                      <img
-                        src="/web_travel/assets/pic/travel/DanangSouvenirs.jpg"
-                        alt=""
-                        class="header__notify-img"
-                      />
-                      <div class="header__notify-info">
-                        <span class="header__notify-name"
-                          >Bạn đã lưu một địa điểm</span
-                        >
-                        <span class="header__notify-time">10 phút trước</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="header__notify-item">
-                    <a href="" class="header__notify-link">
-                      <img
-                        src="/web_travel/assets/pic/travel/DanangSouvenirs.jpg"
-                        alt=""
-                        class="header__notify-img"
-                      />
-                      <div class="header__notify-info">
-                        <span class="header__notify-name"
-                          >Bạn đã lưu một địa điểm</span
-                        >
-                        <span class="header__notify-time">10 phút trước</span>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-                <footer class="header__notify-footer">
-                  <a href="" class="header__notify-footer-btn">Xem tất cả</a>
-                </footer>
-              </div>
-            </li>
-            <li>
-              <a href=""><i class="fa-regular fa-comment"></i></a>
-            </li>
-            <li>
-              <a href=""><i class="fa-regular fa-calendar"></i></a>
-            </li>
-            <li>
-              <a href=""><i class="fa-solid fa-user"></i></a>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Hình ảnh</a>
             </li>
           </ul>
+
+          <!-- btn-user -->
+          <div class="btn-user">
+            <i
+              class="fa-regular fa-user fa-lg js-btn-user"
+              style="color: rgba(255, 255, 255, 1); padding-left: 20px"
+            ></i>
+            <ul class="subnav-user js-subnav-user">
+              <li>
+                <a href="" class="">Thông tin cá nhân</a>
+              </li>
+              <li>
+                <a href="/web_travel/html/loginForm.html" class="js-btn-login"
+                  >Đăng nhập</a
+                >
+              </li>
+              <li>
+                <a href="/web_travel/html/signupForm.html" class="">Đăng ký</a>
+              </li>
+              <li><a href="" class="">Đăng xuất</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    <div class="contact">
+
+      <!-- contact -->
+      <div class="contact">
         <div class="contact__title">
-            <h1>Liên hệ với chúng tôi</h1>
-            <p>Liên hệ với chúng tôi qua email, điện thoại hoặc địa chỉ của chúng tôi dưới đây.</p>
+          <h1>Liên hệ với chúng tôi</h1>
+          <p>
+            Liên hệ với chúng tôi qua email, điện thoại hoặc địa chỉ của chúng
+            tôi dưới đây.
+          </p>
         </div>
         <div class="contact__info">
-            <div class="contact__info-phone">
-                <a class="contact__info-btn" href="tel:+84...">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>0352 546 576</span>
-                </a>
-                <div class="contact__info-info">
-                    <h3>Đăng bài đăng</h3>
-                    <p>Yêu thêm hoặc chỉnh sửa bài</p>
-                </div>
+          <div class="contact__info-phone">
+            <a class="contact__info-btn" href="tel:+84 886 013 177">
+              <i class="fa-solid fa-phone"></i>
+              <span>0886 013 177</span>
+            </a>
+            <div class="contact__info-info">
+              <h3>Đăng bài đăng</h3>
+              <p>Yêu thêm hoặc chỉnh sửa bài</p>
             </div>
-            <div class="contact__info-phone">
-                <a class="contact__info-btn" href="tel:+84...">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>0352 546 576</span>
-                </a>
-                <div class="contact__info-info">
-                    <h3>Đăng bài đăng</h3>
-                    <p>Yêu thêm hoặc chỉnh sửa bài</p>
-                </div>
+          </div>
+          <div class="contact__info-phone">
+            <a class="contact__info-btn" href="tel:+84 347 874 373">
+              <i class="fa-solid fa-phone"></i>
+              <span>0347 874 373</span>
+            </a>
+            <div class="contact__info-info">
+              <h3>Đăng bài đăng</h3>
+              <p>Yêu thêm hoặc chỉnh sửa bài</p>
             </div>
+          </div>
         </div>
-    </div>
-    <div class="how-contact">
+      </div>
+
+      <!-- how contact -->
+      <div class="how-contact">
         <form class="form-contact">
           <div class="title-form-contact">
             <h3>Thông tin liên hệ</h3>
-            <span>Phần thông tin bắt buộc <span style="color: red">*</span></span>
+            <span
+              >Phần thông tin bắt buộc <span style="color: red">*</span></span
+            >
           </div>
           <div class="input">
-            <label for="fullName">Tên đầy đủ <span style="color: red">*</span></label>
+            <label for="fullName"
+              >Tên đầy đủ <span style="color: red">*</span></label
+            >
             <input type="text" id="fullName" required />
           </div>
           <div class="input">
-            <label for="yourEmail">Email <span style="color: red">*</span></label>
+            <label for="yourEmail"
+              >Email <span style="color: red">*</span></label
+            >
             <input type="text" id="yourEmail" required />
           </div>
           <div class="input">
-            <label for="phone">Số điện thoại <span style="color: red">*</span></label>
+            <label for="phone"
+              >Số điện thoại <span style="color: red">*</span></label
+            >
             <input type="text" id="phone" required />
           </div>
           <div class="input">
@@ -173,8 +139,10 @@
           </div>
           <button>Gửi yêu cầu</button>
         </form>
-    </div>
-    <section class="footer">
+      </div>
+
+      <!-- footer -->
+      <section class="footer">
         <div class="wrap-footer">
           <p>Thành viên</p>
 
@@ -216,5 +184,8 @@
           </div>
         </div>
       </section>
-</body>
+    </div>
+
+    <script src="/web_travel/js/main.js"></script>
+  </body>
 </html>
