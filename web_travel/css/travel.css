@@ -16,7 +16,7 @@ html {
   display: flex;
   padding: 0 5%;
   position: fixed;
-  background-color: #fff;
+  background-color: #4366c5 !important;
   z-index: 2;
   right: 0;
   left: 0;
@@ -33,9 +33,9 @@ html {
 }
 
 .header__left img {
-  height: 30px;
-  border-radius: 50px;
-  margin-bottom: 10px;
+  width: 40px;
+  border-radius: 999px;
+  margin-bottom: 13px;
 }
 
 .header__left ul li,
@@ -45,7 +45,7 @@ html {
 }
 
 .header__left a {
-  margin-right: 20px;
+  margin-right: 0px;
   padding: 8px 10px;
 }
 
@@ -58,30 +58,41 @@ html {
 .header__middle input {
   height: 40px;
   padding: 0 10px;
-  margin: 10px 0;
+  margin: 15px 0;
   width: 100%;
   border-radius: 10px;
+  outline: none;
+  border: none;
 }
 
 .header__middle i {
   font-size: 25px;
-  color: #070a52;
+  color: #fff;
   display: none;
 }
 
 .header__left i,
 .header__right i {
   font-size: 25px;
-  color: #070a52;
+  color: #fff;
+}
+
+.header__right i {
+  margin-left: 30px;
+}
+
+.header__right a:first-child {
+  margin-left: 0;
 }
 
 .header__left i:hover,
 .header__right i:hover {
-  color: #d21312;
+  color: #e7e5e5;
 }
 
 .header__right {
   /* line-height: 80px; */
+  margin-top: 8px;
 }
 
 .header__right a {
@@ -225,11 +236,12 @@ html {
 /* Content */
 .content {
   padding: 20px 20px;
-  background-color: #ddf7e3;
+  /* background-color: #ddf7e3; */
   /* background-color: rgba(255, 255, 255, 1); */
   padding-top: 90px;
   z-index: 1;
 }
+
 .content-menu div {
   margin-left: 10%;
 }
