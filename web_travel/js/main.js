@@ -1,15 +1,15 @@
 // open-close btn-user
 const btnUser = document.querySelector(".js-btn-user");
-const formUser = document.querySelector(".js-subnav-user");
+const formUser = document.querySelector(".subnav-user");
 
-function showFormUser() {
-  formUser.classList.add("open");
-}
-btnUser.addEventListener("click", showFormUser);
 document.addEventListener("click", function (event) {
   if (event.target !== btnUser && event.target !== formUser) {
     formUser.classList.remove("open");
   }
+});
+
+$(".js-btn-user").click(function () {
+  $(".subnav-user").toggleClass("open");
 });
 
 // scroll header & gotopbtn
